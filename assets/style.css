@@ -1,0 +1,46 @@
+body {
+    display:flex;
+    flex-direction: column;
+    background: #eeefe7;
+    user-select: none;
+    min-height: 100vh;
+}
+
+header {
+    background: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+    color: white;
+}
+
+#navlinks {
+    display: flex;
+    margin-right: 10px;
+}
+
+.headerlinks {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .herobanner {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .bannerheading {
+    position: absolute;
+    right: 16px;
+  }

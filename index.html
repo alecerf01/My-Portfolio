@@ -5,39 +5,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <h1 id="maintitle">My Portfolio</h1>
     <nav>
+      <ul style="list-style: none;" id="navlinks">
+        <li>
+          <a class="headerlinks" href="https://alecerf01.github.io/Lesson-2/">About Me</a>
+        </li>
+        <li>
+          <a class="headerlinks" href="Placeholder">Work</a>
+        </li>
+        <li>
+          <a class="headerlinks" href="Placeholder">Contact Me</a>
+        </li>
+        <li>
+          <a class="headerlinks" href="Placeholder">CV</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
+    <div> <image src="./assets/images/herobanner.jpg" alt="Mountain Range"> 
+      <h2 class="bannerheading">Welcome!</h2>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2>About Me</h2>
+      <h2 class="contentTitle">About Me</h2>
+      <p>
+        Hi, my name is Alex, I was born in the Seychelles, not that I remember it as I left when I was 2 years old.
+        I've lived all over the world, travelling fairly frequently because of my parents work.
+        I am half French and half English. I can also speak Spanish and some Japanese, though lots of it has been lost
+        from lack of practice.
+      </p>
+
+      <p>
+        A little bit about me, I love reading both books and manga, with a wide range of genres that I enjoy.
+        My favourite being epic fantasy, where the series span over 4 books. In my spare time I enjoy watching anime and
+        spending time with my friends.
+      </p>
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <section class="page-section" id="workcontainer">
+      <h2 class="contentTitle" id="title">Work</h2>
+      <div id="firstProject">First Project</div>
+      <div id="secondProject">Placeholder</div>
+      <div id="thirdProject">Placeholder</div>
+      <div id="fourthProject">Placeholder</div>
+      <div id="fithProject">Placeholder</div>
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+      <h2 class="contentTitle">Contact Me</h2>
+      <ul style="list-style: none;">
+        <li>
+          Email: alexlecerf0131@gmail.com
+        </li>
+        <li>
+          telephone: 0792835*****
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/alex-lecerf-260878241/">LinkedIn</a>
+        </li>
+      </ul>
     </section>
   </main>
 </body>
