@@ -12,20 +12,20 @@
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1 id="maintitle">My Portfolio</h1>
+    <h1 id="mainTitle">My Portfolio</h1>
     <nav>
       <ul style="list-style: none;" id="navlinks">
         <li>
-          <a class="headerlinks" href="https://alecerf01.github.io/Lesson-2/">About Me</a>
+          <a class="headerlinks" href="#bioContainer">About Me</a>
         </li>
         <li>
-          <a class="headerlinks" href="Placeholder">Work</a>
+          <a class="headerlinks" href="#workContainer">Work</a>
         </li>
         <li>
-          <a class="headerlinks" href="Placeholder">Contact Me</a>
+          <a class="headerlinks" href="#contactContainer">Contact Me</a>
         </li>
         <li>
-          <a class="headerlinks" href="Placeholder">CV</a>
+          <a class="headerlinks" href="https://1drv.ms/w/s!AtFu5TkEMhs5jzQfZrGBNIVpzh3f?e=fvucoe">CV</a>
         </li>
       </ul>
     </nav>
@@ -33,22 +33,24 @@
 
   <!-- hero banner -->
   <section class="hero-banner">
-    <div> <image src="./assets/images/herobanner.jpg" alt="Mountain Range"> 
-      <h2 class="bannerheading">Welcome!</h2>
+    <img src="./assets/images/mountain-range2.jpg" alt="Mountain Range" style="width:100%;">
+      <div class="bannerheading">
+        <h2>Welcome!</h2>
+      </div>
+    
   </section>
 
-  <main class="page-wrapper">
+  <main class="gridContainer">
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h2 class="contentTitle">About Me</h2>
-      <p>
+    <section class="page-section" id="bioContainer">
+      <h1 id="bioTitle">About Me</h1>
+      <p id="bioText">
         Hi, my name is Alex, I was born in the Seychelles, not that I remember it as I left when I was 2 years old.
         I've lived all over the world, travelling fairly frequently because of my parents work.
         I am half French and half English. I can also speak Spanish and some Japanese, though lots of it has been lost
         from lack of practice.
-      </p>
-
-      <p>
+      <br>
+      <br>
         A little bit about me, I love reading both books and manga, with a wide range of genres that I enjoy.
         My favourite being epic fantasy, where the series span over 4 books. In my spare time I enjoy watching anime and
         spending time with my friends.
@@ -56,27 +58,39 @@
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="workcontainer">
-      <h2 class="contentTitle" id="title">Work</h2>
-      <div id="firstProject">First Project</div>
-      <div id="secondProject">Placeholder</div>
-      <div id="thirdProject">Placeholder</div>
-      <div id="fourthProject">Placeholder</div>
-      <div id="fithProject">Placeholder</div>
+    <section class="page-section" id="workContainer">
+      <h1 id="workTitle">Work</h1>
+      <div id="firstProject">
+        <a a href="Placeholder" class="workLinks">Portfolio</a>
+      </div>
+      <div id="secondProject">
+        <a a href="Placeholder" class="workLinks">2nd Project</a>
+      </div>
+      <div id="thirdProject">
+        <a a href="Placeholder" class="workLinks">3rd Project</a>
+      </div>
+      <div id="fourthProject">
+        <a a href="Placeholder" class="workLinks">4th Project</a>
+      </div>
+      <div id="fithProject">
+        <a a href="Placeholder" class="workLinks">5th Project</a>
+      </div>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2 class="contentTitle">Contact Me</h2>
-      <ul style="list-style: none;">
+    <section class="page-section" id="contactContainer">
+      <h1 id="contactTitle">Contact Me</h1>
+      <ul id="contactInfo" style="list-style: none;">
         <li>
-          Email: alexlecerf0131@gmail.com
+          <div>
+            Email:<a class="contact-details" href="Placeholder"> alexlecerf0131@gmail.com</a>
+            </div>
         </li>
         <li>
-          telephone: 0792835*****
+          <a>telephone: 07700700700</a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/alex-lecerf-260878241/">LinkedIn</a>
+          <a id="linkedIn" class="contact-details" href="https://www.linkedin.com/in/alex-lecerf-260878241/">LinkedIn</a>
         </li>
       </ul>
     </section>

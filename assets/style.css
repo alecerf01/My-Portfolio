@@ -1,3 +1,11 @@
+:root {
+    --bordercolor: rgb(22, 44, 23);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     display:flex;
     flex-direction: column;
@@ -15,6 +23,11 @@ header {
     color: white;
 }
 
+#mainTitle {
+    font-size: 42px;
+    padding-left: 20px;
+}
+
 #navlinks {
     display: flex;
     margin-right: 10px;
@@ -28,19 +41,186 @@ header {
     color: white;
 }
 
+.hero-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
 img {
     width: 100%;
     height: 300px;
     object-fit: cover;
   }
 
-  .herobanner {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-
   .bannerheading {
     position: absolute;
+    bottom: 8px;
     right: 16px;
+  }
+  
+
+  /* Grids */
+
+
+  /* Page Grid */
+  .gridContainer {
+    display: grid;
+    height: 200px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "bioContainer"
+    "workContainer"
+    "contactContainer"
+  }
+
+ #bioContainer {
+    grid-area: bioContainer;
+ }
+
+ #workContainer {
+    grid-area: workContainer;
+ }
+
+ #contactContainer {
+    grid-area: contactContainer;
+ }
+
+
+ /* Bio Grid */
+ #bioContainer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 15% 85%;
+    grid-template-areas: 
+    "left right";
+ }
+
+ #bioTitle {
+    font-size: 30px;
+    margin-right: 10px;
+    border-right: 5px solid black;
+    margin-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+ }
+
+ #bioText {
+    padding-left: 10px;
+    grid-area: right;
+ }
+
+ /* Work Grid */
+
+ #workContainer {
+    display: grid;
+    grid-template-rows: 300px 100px 100px;
+    grid-template-columns: 15% 1fr 1fr;
+    grid-template-areas:
+    "left p1 p1"
+    "left p2 p3"
+    "left p4 p5";
+ }
+
+ #workTitle {
+    font-size: 30px;
+    grid-area: left;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    border-right: 5px solid black;
+    margin-right: 30px;
+ }
+
+ #firstProject {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    border: 5px solid var(--bordercolor);
+    padding-left: 10px;
+    grid-area: p1;
+    background-image: url(./images/portfolio-image.png.image.1440.png);
+ }
+
+ #secondProject {
+    background-color: #1f851f;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 5px solid var(--bordercolor);
+    padding-left: 10px;
+    grid-area: p2;
+ }
+
+ #thirdProject {
+    background-color: #1f851f;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    border: 5px solid var(--bordercolor);
+    grid-area: p3;
+ }
+
+ #fourthProject {
+    background-color: #1f851f;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 5px solid var(--bordercolor);
+    padding-left: 10px;
+    grid-area: p4;
+ }
+
+ #fithProject {
+    background-color: #1f851f;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    border: 5px solid var(--bordercolor);
+    grid-area: p5;
+ }
+
+ .workLinks {
+    text-decoration: none;
+    color: white;
+ }
+
+
+  /* Contact Grid */
+
+  #contactContainer {
+    display: grid;
+    margin-top: 20px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 15% 85%;
+    grid-template-areas: 
+    "left right";
+  }
+
+  #contactTitle {
+    font-size: 30px;
+    grid-area: left;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    border-right: 5px solid black;
+    margin-right: 30px;
+  }
+
+  #contactInfo {
+    display: flex;
+    justify-content: space-around;
+    grid-area: right;
+    font-weight: bold;
+    padding-left: 0px;
+  }
+
+  .contact-details {
+    text-decoration: none;
+    color: rgb(202, 8, 8);
   }
