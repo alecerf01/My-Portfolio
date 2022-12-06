@@ -1,5 +1,5 @@
 :root {
-    --bordercolor: rgb(22, 44, 23);
+    --primary: #690202;
 }
 
 html {
@@ -15,17 +15,17 @@ body {
 }
 
 header {
-    background: #333333;
+    background: #333232;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 10px;
     color: white;
 }
 
 #mainTitle {
     font-size: 42px;
-    padding-left: 20px;
+    padding: 20px;
+    background: var(--primary);
 }
 
 #navlinks {
@@ -67,14 +67,17 @@ img {
   /* Page Grid */
   .gridContainer {
     display: grid;
-    height: 200px;
-    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: 
+    "name"
     "bioContainer"
     "workContainer"
     "contactContainer"
   }
+
+ #bio-image-container {
+    grid-area: name;
+ }
 
  #bioContainer {
     grid-area: bioContainer;
@@ -88,6 +91,34 @@ img {
     grid-area: contactContainer;
  }
 
+ /* Image Grid */
+
+ #bio-image-container {
+    display: grid;
+    height: 200px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 15% 85%;
+    grid-template-areas: 
+    "left right";
+ }
+
+#image {
+    grid-area: left;
+    background-image: url(./images/avatar.jpg);
+    display: flex;
+    border: 1px solid black;
+    border-right: 5px solid black;
+    background-size: cover;
+    background-position: center;
+    margin-right: 30px;
+    padding-right: 20px;
+}
+
+#name {
+    grid-area: right;
+    display: flex;
+    align-items: center;
+}
 
  /* Bio Grid */
  #bioContainer {
@@ -100,7 +131,6 @@ img {
 
  #bioTitle {
     font-size: 30px;
-    margin-right: 10px;
     border-right: 5px solid black;
     margin-right: 30px;
     display: flex;
@@ -117,7 +147,7 @@ img {
 
  #workContainer {
     display: grid;
-    grid-template-rows: 300px 100px 100px;
+    grid-template-rows: 300px 200px 200px;
     grid-template-columns: 15% 1fr 1fr;
     grid-template-areas:
     "left p1 p1"
@@ -135,15 +165,21 @@ img {
     margin-right: 30px;
  }
 
+.projectTitle {
+    background: var(--primary);
+    padding: 20px;
+}
+
  #firstProject {
     font-size: 30px;
     color: white;
     display: flex;
-    align-items: flex-end;
-    border: 5px solid var(--bordercolor);
-    padding-left: 10px;
+    align-items: center;
+    border: 5px solid var(--primary);
     grid-area: p1;
-    background-image: url(./images/portfolio-image.png.image.1440.png);
+    background-image: url(./images/sunset.jpg);
+    background-size: cover;
+    background-position: center;
  }
 
  #secondProject {
@@ -151,12 +187,14 @@ img {
     font-size: 20px;
     color: white;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-top: 20px;
     margin-right: 20px;
-    border: 5px solid var(--bordercolor);
-    padding-left: 10px;
+    border: 5px solid var(--primary);
     grid-area: p2;
+    background-image: url(./images/sea.jpg);
+    background-size: cover;
+    background-position: center;
  }
 
  #thirdProject {
@@ -164,11 +202,13 @@ img {
     font-size: 20px;
     color: white;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-top: 20px;
-    border: 5px solid var(--bordercolor);
-    padding-left: 10px;
+    border: 5px solid var(--primary);
     grid-area: p3;
+    background-image: url(./images/beach.jpg);
+    background-size: cover;
+    background-position: center;
  }
 
  #fourthProject {
@@ -176,12 +216,14 @@ img {
     font-size: 20px;
     color: white;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-top: 20px;
     margin-right: 20px;
-    border: 5px solid var(--bordercolor);
-    padding-left: 10px;
+    border: 5px solid var(--primary);
     grid-area: p4;
+    background-image: url(./images/forest.jpg);
+    background-size: cover;
+    background-position: center;
  }
 
  #fithProject {
@@ -189,11 +231,13 @@ img {
     font-size: 20px;
     color: white;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-top: 20px;
-    border: 5px solid var(--bordercolor);
-    padding-left: 10px;
+    border: 5px solid var(--primary);
     grid-area: p5;
+    background-image: url(./images/cliffside.jpg);
+    background-size: cover;
+    background-position: center;
  }
 
  .workLinks {
@@ -233,5 +277,170 @@ img {
 
   .contact-details {
     text-decoration: none;
-    color: rgb(202, 8, 8);
+    color: #ca0808;
   }
+
+
+/* Media Queries */
+
+/* Header */
+
+@media screen 
+  and (max-width: 690px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+/* Hero Banner */  
+
+@media screen 
+and (max-width: 690px) {
+    .bannerheading {
+        position: absolute;
+        left: 16px;
+    }
+}  
+
+/* Name and Bio image */
+
+  @media screen 
+  and (max-width: 690px) {
+    #bio-image-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "up"
+        "down";
+    }
+
+    #name {
+        grid-area: up;
+        display: flex;
+        justify-content: center;
+    }
+
+    #image {
+        grid-area: down;
+        display: flex;
+        justify-content: center;
+        height: 250px;
+        
+        border-right: none;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+  }
+
+  /* Bio content */
+
+  @media screen 
+  and (max-width: 690px) {
+    #bioContainer {
+        display: grid;
+        margin-top: 20px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "up"
+        "down";
+    }
+
+    #bioTitle {
+        grid-area: up;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 5px solid black;
+        border-right: none;
+        margin-top: 150px;
+        margin-right: none;
+        padding: none;
+    }
+
+    #bioText {
+        grid-area: down;
+        display: flex;
+    }
+  }
+
+  /* Portfolio content */
+  
+  @media screen 
+  and (max-width: 690px) {
+    #workContainer {
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "up"
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "p5";
+    }
+
+    #workTitle {
+        grid-area: up;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 5px solid black;
+        border-right: none;
+    }
+    .projectTitle {
+        padding: 10px;
+    }
+
+    #firstProject {
+        grid-area: p1;
+    }
+
+    #secondProject {
+        grid-area: p2;
+        margin-right: 0px;
+    }
+
+    #thirdProject {
+        grid-area: p3;
+    }
+
+    #fourthProject {
+        grid-area: p4;
+        margin-right: 0px;
+    }
+
+    #fithProject {
+        grid-area: p5;
+    }
+  }
+
+  /* Contact info */
+
+  @media screen 
+  and (max-width: 690px) {
+  #contactContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "up"
+    "down";
+  }
+
+  #contactTitle {
+    grid-area: up;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 5px solid black;
+    border-right: none;
+  }
+
+  #contactInfo {
+    grid-area: down;
+    display: flex;
+    flex-direction: column;
+  }
+  }
+
