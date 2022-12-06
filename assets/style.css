@@ -290,6 +290,11 @@ img {
         display: flex;
         flex-direction: column;
     }
+
+    #mainTitle {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* Hero Banner */

@@ -18,7 +18,7 @@ Press each project to link to the deployed application relating to it.
 
 **Below is the attached link for the deployed application**
 
-Click [here](placeholder) to go to my page.
+Click [here](https://alecerf01.github.io/My-Portfolio/) to go to my page.
 
 ### Mock-Up
 
