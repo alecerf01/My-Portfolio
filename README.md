@@ -20,6 +20,16 @@ Press each project to link to the deployed application relating to it.
 
 Click [here](placeholder) to go to my page.
 
+### Mock-Up
+
+The following image shows the web application's appearance and functionality on a desktop:
+
+![My Portfolio webpage includes a header with links and a banner image, and cards with text and images including links to projects](./assets/images/Mockup-desktop.png)
+
+The following image shows the web application's appearance and functionality on a mobile device:
+
+![My Portfolio webpage includes a header with links and a banner image, and cards with text and images including links to projects](./assets/images/Mockup-mobile.png)
+
 Alongside this you have my contact information at the bottom to contact me.
 
 ## License
