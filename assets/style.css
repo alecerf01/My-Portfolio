@@ -4,10 +4,10 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
-    display:flex;
+    display: flex;
     flex-direction: column;
     background: #eeefe7;
     user-select: none;
@@ -52,55 +52,55 @@ img {
     width: 100%;
     height: 300px;
     object-fit: cover;
-  }
+}
 
-  .bannerheading {
+.bannerheading {
     position: absolute;
     bottom: 8px;
     right: 16px;
-  }
-  
-
-  /* Grids */
+}
 
 
-  /* Page Grid */
-  .gridContainer {
+/* Grids */
+
+
+/* Page Grid */
+.gridContainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "name"
-    "bioContainer"
-    "workContainer"
-    "contactContainer"
-  }
+    grid-template-areas:
+        "name"
+        "bioContainer"
+        "workContainer"
+        "contactContainer"
+}
 
- #bio-image-container {
+#bio-image-container {
     grid-area: name;
- }
+}
 
- #bioContainer {
+#bioContainer {
     grid-area: bioContainer;
- }
+}
 
- #workContainer {
+#workContainer {
     grid-area: workContainer;
- }
+}
 
- #contactContainer {
+#contactContainer {
     grid-area: contactContainer;
- }
+}
 
- /* Image Grid */
+/* Image Grid */
 
- #bio-image-container {
+#bio-image-container {
     display: grid;
     height: 200px;
     grid-template-rows: 1fr;
     grid-template-columns: 15% 85%;
-    grid-template-areas: 
-    "left right";
- }
+    grid-template-areas:
+        "left right";
+}
 
 #image {
     grid-area: left;
@@ -120,42 +120,42 @@ img {
     align-items: center;
 }
 
- /* Bio Grid */
- #bioContainer {
+/* Bio Grid */
+#bioContainer {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 15% 85%;
-    grid-template-areas: 
-    "left right";
- }
+    grid-template-areas:
+        "left right";
+}
 
- #bioTitle {
+#bioTitle {
     font-size: 30px;
     border-right: 5px solid black;
     margin-right: 30px;
     display: flex;
     justify-content: flex-end;
     padding-right: 20px;
- }
+}
 
- #bioText {
+#bioText {
     padding-left: 10px;
     grid-area: right;
- }
+}
 
- /* Work Grid */
+/* Work Grid */
 
- #workContainer {
+#workContainer {
     display: grid;
     grid-template-rows: 300px 200px 200px;
     grid-template-columns: 15% 1fr 1fr;
     grid-template-areas:
-    "left p1 p1"
-    "left p2 p3"
-    "left p4 p5";
- }
+        "left p1 p1"
+        "left p2 p3"
+        "left p4 p5";
+}
 
- #workTitle {
+#workTitle {
     font-size: 30px;
     grid-area: left;
     display: flex;
@@ -163,14 +163,14 @@ img {
     padding-right: 20px;
     border-right: 5px solid black;
     margin-right: 30px;
- }
+}
 
 .projectTitle {
     background: var(--primary);
     padding: 20px;
 }
 
- #firstProject {
+#firstProject {
     font-size: 30px;
     color: white;
     display: flex;
@@ -180,9 +180,9 @@ img {
     background-image: url(./images/sunset.jpg);
     background-size: cover;
     background-position: center;
- }
+}
 
- #secondProject {
+#secondProject {
     background-color: #1f851f;
     font-size: 20px;
     color: white;
@@ -195,9 +195,9 @@ img {
     background-image: url(./images/sea.jpg);
     background-size: cover;
     background-position: center;
- }
+}
 
- #thirdProject {
+#thirdProject {
     background-color: #1f851f;
     font-size: 20px;
     color: white;
@@ -209,9 +209,9 @@ img {
     background-image: url(./images/beach.jpg);
     background-size: cover;
     background-position: center;
- }
+}
 
- #fourthProject {
+#fourthProject {
     background-color: #1f851f;
     font-size: 20px;
     color: white;
@@ -224,9 +224,9 @@ img {
     background-image: url(./images/forest.jpg);
     background-size: cover;
     background-position: center;
- }
+}
 
- #fithProject {
+#fithProject {
     background-color: #1f851f;
     font-size: 20px;
     color: white;
@@ -238,26 +238,26 @@ img {
     background-image: url(./images/cliffside.jpg);
     background-size: cover;
     background-position: center;
- }
+}
 
- .workLinks {
+.workLinks {
     text-decoration: none;
     color: white;
- }
+}
 
 
-  /* Contact Grid */
+/* Contact Grid */
 
-  #contactContainer {
+#contactContainer {
     display: grid;
     margin-top: 20px;
     grid-template-rows: 1fr;
     grid-template-columns: 15% 85%;
-    grid-template-areas: 
-    "left right";
-  }
+    grid-template-areas:
+        "left right";
+}
 
-  #contactTitle {
+#contactTitle {
     font-size: 30px;
     grid-area: left;
     display: flex;
@@ -265,55 +265,52 @@ img {
     padding-right: 20px;
     border-right: 5px solid black;
     margin-right: 30px;
-  }
+}
 
-  #contactInfo {
+#contactInfo {
     display: flex;
     justify-content: space-around;
     grid-area: right;
     font-weight: bold;
     padding-left: 0px;
-  }
+}
 
-  .contact-details {
+.contact-details {
     text-decoration: none;
     color: #ca0808;
-  }
+}
 
 
 /* Media Queries */
 
 /* Header */
 
-@media screen 
-  and (max-width: 690px) {
+@media screen and (max-width: 690px) {
     header {
         display: flex;
         flex-direction: column;
     }
-  }
+}
 
-/* Hero Banner */  
+/* Hero Banner */
 
-@media screen 
-and (max-width: 690px) {
+@media screen and (max-width: 690px) {
     .bannerheading {
         position: absolute;
         left: 16px;
     }
-}  
+}
 
 /* Name and Bio image */
 
-  @media screen 
-  and (max-width: 690px) {
+@media screen and (max-width: 690px) {
     #bio-image-container {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "up"
-        "down";
+        grid-template-areas:
+            "up"
+            "down";
     }
 
     #name {
@@ -327,25 +324,24 @@ and (max-width: 690px) {
         display: flex;
         justify-content: center;
         height: 250px;
-        
+
         border-right: none;
         margin-right: 0px;
         padding-right: 0px;
     }
-  }
+}
 
-  /* Bio content */
+/* Bio content */
 
-  @media screen 
-  and (max-width: 690px) {
+@media screen and (max-width: 690px) {
     #bioContainer {
         display: grid;
         margin-top: 20px;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "up"
-        "down";
+        grid-template-areas:
+            "up"
+            "down";
     }
 
     #bioTitle {
@@ -363,23 +359,22 @@ and (max-width: 690px) {
         grid-area: down;
         display: flex;
     }
-  }
+}
 
-  /* Portfolio content */
-  
-  @media screen 
-  and (max-width: 690px) {
+/* Portfolio content */
+
+@media screen and (max-width: 690px) {
     #workContainer {
         display: grid;
         grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
-        "up"
-        "p1"
-        "p2"
-        "p3"
-        "p4"
-        "p5";
+            "up"
+            "p1"
+            "p2"
+            "p3"
+            "p4"
+            "p5";
     }
 
     #workTitle {
@@ -389,6 +384,7 @@ and (max-width: 690px) {
         border-bottom: 5px solid black;
         border-right: none;
     }
+
     .projectTitle {
         padding: 10px;
     }
@@ -414,33 +410,31 @@ and (max-width: 690px) {
     #fithProject {
         grid-area: p5;
     }
-  }
+}
 
-  /* Contact info */
+/* Contact info */
 
-  @media screen 
-  and (max-width: 690px) {
-  #contactContainer {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "up"
-    "down";
-  }
+@media screen and (max-width: 690px) {
+    #contactContainer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "up"
+            "down";
+    }
 
-  #contactTitle {
-    grid-area: up;
-    display: flex;
-    justify-content: flex-start;
-    border-bottom: 5px solid black;
-    border-right: none;
-  }
+    #contactTitle {
+        grid-area: up;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 5px solid black;
+        border-right: none;
+    }
 
-  #contactInfo {
-    grid-area: down;
-    display: flex;
-    flex-direction: column;
-  }
-  }
-
+    #contactInfo {
+        grid-area: down;
+        display: flex;
+        flex-direction: column;
+    }
+}
